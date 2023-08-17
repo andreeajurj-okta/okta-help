@@ -175,6 +175,7 @@ xmlAliasData += '    <Map Name=\"csh_admin-third\" Link=\"Topics/Security/admini
 xmlAliasData += '    <Map Name=\"csh_custom_user_types\" Link=\"Topics/users-groups-profiles/usgp-user-types-known issues.htm\" ResolvedId=\"1213\" />';
 xmlAliasData += '    <Map Name=\"csh_custom_user_types_about\" Link=\"Topics/users-groups-profiles/usgp-usertypes-about.htm\" ResolvedId=\"1214\" />';
 xmlAliasData += '    <Map Name=\"csh_eDirectory\" Link=\"Topics/Directory/ldap-agent-manage-integration.htm\" ResolvedId=\"1178\" />';
+xmlAliasData += '    <Map Name=\"csh_FIDO2_WebAuthn\" Link=\"Topics/identity-engine/authenticators/configure-webauthn.htm\" ResolvedId=\"1112\" />';
 xmlAliasData += '    <Map Name=\"csh_notification_enroll\" Link=\"Topics/Security/Security_General.htm#SecurityNotificationEmails\" ResolvedId=\"1098\" />';
 xmlAliasData += '    <Map Name=\"csh_notification_new\" Link=\"Topics/Security/Security_General.htm#SecurityNotificationEmails\" ResolvedId=\"1097\" />';
 xmlAliasData += '    <Map Name=\"csh_notification_reset\" Link=\"Topics/Security/Security_General.htm#SecurityNotificationEmails\" ResolvedId=\"1099\" />';
@@ -578,6 +579,7 @@ xmlAliasData += '    <Map Name=\"csh-smart-card-authenticator\" Link=\"Topics/id
 xmlAliasData += '    <Map Name=\"csh-permission-conditions\" Link=\"Topics/Security/custom-admin-role/permission-conditions.htm\" ResolvedId=\"19006\" />';
 xmlAliasData += '    <Map Name=\"csh-cstm-admin-role-authz-permissions\" Link=\"Topics/Security/custom-admin-role/about-role-permissions.htm#Authorization_server_permissions\" ResolvedId=\"19010\" />';
 xmlAliasData += '    <Map Name=\"csh-cstm-admin-role-customizations-permissions\" Link=\"Topics/Security/custom-admin-role/about-role-permissions.htm#Customization_permissions\" ResolvedId=\"19009\" />';
+xmlAliasData += '    <Map Name=\"csh-cstm-admin-role-profile-source-permissions\" Link=\"Topics/Security/custom-admin-role/about-role-permissions.htm#IdP_permissions\" ResolvedId=\"19007\" />';
 xmlAliasData += '    <Map Name=\"csh-cstm-admin-role-workflow-permissions\" Link=\"Topics/Security/custom-admin-role/about-role-permissions.htm#Workflow_permissions\" ResolvedId=\"19008\" />';
 xmlAliasData += '    <Map Name=\"csh-about-reviewing\" Link=\"Topics/identity-governance/access-certification/iga-ac-about-reviewing-campaigns.htm\" ResolvedId=\"13019\" />';
 xmlAliasData += '    <Map Name=\"csh-administrators-super-admin\" Link=\"Topics/Security/administrators-super-admin.htm\" ResolvedId=\"19012\" />';
@@ -609,11 +611,11 @@ xmlAliasData += '    <Map Name=\"csh-upgrade-siw\" Link=\"Topics/identity-engine
 xmlAliasData += '    <Map Name=\"csh-custom-app-login-change\" Link=\"Topics/identity-engine-upgrade/custom-app-login.htm\" ResolvedId=\"5020\" />';
 xmlAliasData += '    <Map Name=\"csh-om-on-oie\" Link=\"Topics/identity-engine-upgrade/om-on-oie-end-user-experience.htm\" ResolvedId=\"3002\" />';
 xmlAliasData += '    <Map Name=\"ext-compare-siw\" Link=\"Topics/Reference/siw-compare-generations.htm\" ResolvedId=\"5021\" />';
-xmlAliasData += '    <Map Name=\"ext-trusted-origins\" Link=\"Topics/Security/API-trusted-origins.htm\" ResolvedId=\"-2147483648\" />';
+xmlAliasData += '    <Map Name=\"ext-trusted-origins\" Link=\"Topics/Security/API-trusted-origins.htm\" ResolvedId=\"6023\" />';
 xmlAliasData += '    <Map Name=\"csh-disable-omm\" Link=\"Topics/identity-engine-upgrade/disable-omm.htm\" ResolvedId=\"3003\" />';
 xmlAliasData += '    <Map Name=\"csh-dt-after-upgrade\" Link=\"Topics/identity-engine-upgrade/dt-after-upgrade.htm\" ResolvedId=\"3004\" />';
 xmlAliasData += '    <Map Name=\"ext-event-hooks-filters\" Link=\"Topics/automation-hooks/event-hooks-filters.htm\" ResolvedId=\"9009\" />';
-xmlAliasData += '    <Map Name=\"csh-oie-upgrade-eligibility\" Link=\"Topics/identity-engine/oie-upgrade-eligibility.htm\" ResolvedId=\"-2147483648\" />';
+xmlAliasData += '    <Map Name=\"csh-oie-upgrade-eligibility\" Link=\"Topics/identity-engine/oie-upgrade-eligibility.htm\" ResolvedId=\"6014\" />';
 xmlAliasData += '    <Map Name=\"csh-test-ssr-upgrade\" Link=\"Topics/identity-engine-upgrade/self-service/ssr-test.htm\" ResolvedId=\"5022\" />';
 xmlAliasData += '    <Map Name=\"csh-dt-upgrade-considerations\" Link=\"Topics/identity-engine-upgrade/dt-upgrade-considerations.htm\" ResolvedId=\"1111\" />';
 xmlAliasData += '    <Map Name=\"csh-migrate-from-dt-to-fp-troubleshooting\" Link=\"Topics/identity-engine-upgrade/migrate-from-dt-to-fp-troubleshooting.htm\" ResolvedId=\"1137\" />';
@@ -643,5 +645,11 @@ xmlAliasData += '    <Map Name=\"csh-create-role\" Link=\"Topics/Security/custom
 xmlAliasData += '    <Map Name=\"ext-access-test-tool\" Link=\"Topics/identity-engine/policies/access-testing-tool.htm\" ResolvedId=\"13021\" />';
 xmlAliasData += '    <Map Name=\"ext-ldap-agent-supported-directories\" Link=\"Topics/Directory/ldap-agent-supported-directories.htm\" ResolvedId=\"13022\" />';
 xmlAliasData += '    <Map Name=\"ext-ldap-config-intg-settings\" Link=\"Topics/Directory/ldap-configure-integration-settings.htm\" ResolvedId=\"13023\" />';
+xmlAliasData += '    <Map Name=\"csh-oda-password-sync\" Link=\"Topics/oda/macos-pw-sync/macos-pw-sync.htm\" ResolvedId=\"3005\" />';
+xmlAliasData += '    <Map Name=\"ext-create-prof-enroll-form\" Link=\"Topics/identity-engine/policies/create-profile-enrollment-form.htm\" ResolvedId=\"13024\" />';
+xmlAliasData += '    <Map Name=\"csh-cstm-admin-role-devices-permissions\" Link=\"Topics/Security/custom-admin-role/about-role-permissions.htm#Device_permissions\" ResolvedId=\"3006\" />';
+xmlAliasData += '    <Map Name=\"csh-phishing-resistant-auth\" Link=\"Topics/identity-engine/authenticators/phishing-resistant-auth.htm\" ResolvedId=\"4000\" />';
+xmlAliasData += '    <Map Name=\"ext-use-standard-roles\" Link=\"Topics/Security/custom-admin-role/use-standard-roles.htm\" ResolvedId=\"1229\" />';
+xmlAliasData += '    <Map Name=\"csh-use-standard-roles\" Link=\"Topics/Security/custom-admin-role/use-standard-roles.htm\" ResolvedId=\"1231\" />';
 xmlAliasData += '</CatapultAliasFile>';
 MadCap.Utilities.Xhr._FilePathToXmlStringMap.Add('Alias', xmlAliasData);
