@@ -4,7 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="typeofcontent" content="documentation" />
         <meta name="audience" content="Okta Access Gateway" />
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>クライアント証明書チェーン | Okta</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Initialize the Access Gateway Admin UI console | Okta</title>
         <meta charset="utf-8" />
         <meta name="description" content="" />
         <meta name="author" content="" />
@@ -42,6 +42,8 @@
 }
 
 </style>
+        <link href="../../Resources/TableStyles/standard-shaded-rows.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="canonical" href="https://help.okta.com/oag/en-us/Content/Topics/Access-Gateway/boot-strap-oag-init-console.htm" />
         <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
         </script>
         <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
@@ -107,7 +109,7 @@
                 </aside>
                 <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
                     <div data-sticky-container="" class="title-bar-container">
-                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1024px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">メインコンテンツにスキップする</a>
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1024px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">メインコンテンツにスキップ</a>
                             <div class="middle title-bar-section outer-row clearfix">
                                 <div class="menu-icon-container relative clearfix">
                                     <div class="central-account-wrapper">
@@ -290,81 +292,21 @@
                                             <div class="body-main" data-test="bodyContent">
                                                 <!-- Main content body -->
                                                 <div role="main" id="mc-main-content">
-                                                    <h1>クライアント証明書チェーン</h1>
-                                                    <p>クライアント証明書チェーンのメニューオプションでは、クライアント証明書チェーンおよび証明書失効リスト（CRL）の設定を表示、追加、削除、その他管理できます。詳しくは<a href="cert-chain-operations.htm" class="MCXref xref" xrefformat="{para}">「証明書チェーンの操作」</a>を参照してください。</p>
-                                                    <p><span class="uicontrol">c</span>を選択し、<span class="uicontrol">[Client certificate chain（クライアント証明書チェーン）]</span>メニューを開きます。</p>
-                                                    <h2>証明書チェーンコマンド</h2>
-                                                    <ul>
-                                                        <li><a href="#View" class="MCXref xref" xrefformat="{para}">証明書チェーンを表示</a>
-                                                        </li>
-                                                        <li><a href="#Add" class="MCXref xref" xrefformat="{para}">証明書チェーンを追加</a>
-                                                        </li>
-                                                        <li><a href="#Delete" class="MCXref xref" xrefformat="{para}">証明書チェーンを削除</a>
-                                                        </li>
-                                                        <li><a href="#Show" class="MCXref xref" xrefformat="{para}">証明書チェーンの詳細を表示／非表示にする</a>
-                                                        </li>
-                                                        <li><a href="#Manage" class="MCXref xref" xrefformat="{para}">CRL設定を管理する</a> </li>
-                                                    </ul>
                                                     <div>
-                                                        <div>
-                                                            <h3><a name="View"></a>証明書チェーンを表示</h3>
-                                                            <ol>
-                                                                <li value="1"><span class="uicontrol">c</span>を押して証明書チェーン管理メニューに進みます。</li>
-                                                                <li value="2">矢印キーを使用して証明書チェーンを選択します。<span class="uicontrol">i</span>と<span class="uicontrol">j</span>を使用してリストをスクロールできます。</li>
-                                                                <li value="3">改行キーを押して選択した証明書を表示します。 </li>
-                                                                <li value="4"><span class="uicontrol">x</span>を押してメインメニューに戻ります。</li>
-                                                            </ol>
-                                                        </div>
-                                                        <div>
-                                                            <h3><a name="Add"></a>証明書チェーンを追加</h3>
-                                                            <ol>
-                                                                <li value="1"><span class="uicontrol">c</span>を押して証明書チェーン管理メニューに進みます。</li>
-                                                                <li value="2"><span class="uicontrol">a</span>を押して証明書チェーンを追加します。</li>
-                                                                <li value="3">完了したら、[<span class="uicontrol">Ctrl-d]</span>を入力して、証明書をコマンドウィンドウに貼り付けます。<br /><div class="noteOkta"><p class="noteContent">証明書チェーンが無効または期限切れになった場合、エラーが発生し、ロードされません。</p></div></li>
-                                                                <li value="4"><span class="uicontrol">x</span>を押してメインメニューに戻ります。</li>
-                                                            </ol>
-                                                        </div>
-                                                        <div>
-                                                            <h3><a name="Delete"></a>証明書チェーンを削除</h3>
-                                                            <div>
-                                                                <p><span class="mc-variable okta-feature-names.Access_Gateway variable">Access Gateway</span>では次のことができます。</p>
-                                                                <ul>
-                                                                    <li>証明書チェーン全体の削除 - すべての中間証明書と子証明書を含む証明書チェーンを完全に削除する。</li>
-                                                                </ul>
-                                                            </div>
-                                                            <h4>証明書チェーン全体を削除</h4>
-                                                            <ol>
-                                                                <li value="1"><span class="uicontrol">c</span>を押して証明書チェーン管理メニューに進みます。</li>
-                                                                <li value="2">矢印キーを使用して証明書チェーンを選択します。<span class="uicontrol">i</span>と<span class="uicontrol">j</span>を使用してリストをスクロールできます。</li>
-                                                                <li value="3"><span class="uicontrol">d</span>キーを押して削除プロセスを開始します。</li>
-                                                                <li value="4">削除ポップアップメニューで、削除する証明書チェーンを表すインデックスを選択します。 </li>
-                                                                <li value="5">プロンプトが表示されたら、<span class="uicontrol">y</span>を入力して削除を確定するか、<span class="uicontrol">n</span>を押してキャンセルします。 </li>
-                                                                <li value="6"><span class="uicontrol">x</span>を押してメインメニューに戻ります。</li>
-                                                            </ol>
-                                                        </div>
-                                                        <div>
-                                                            <h3><a name="Show"></a>証明書チェーンの詳細を表示／非表示にする</h3>
-                                                            <p>表示／非表示メニューはトグルです。<span class="uicontrol">h</span>を入力して証明書の詳細を非表示にするか、<span class="uicontrol">s</span>を入力して表示します。 </p>
-                                                            <ol>
-                                                                <li value="1"><span class="uicontrol">c</span>を押して証明書チェーン管理メニューに進みます。</li>
-                                                                <li value="2"><span class="uicontrol">s</span>を入力して詳細を表示するか、<span class="uicontrol">h</span>を入力して詳細を非表示にします。</li>
-                                                            </ol>
-                                                        </div>
-                                                        <div>
-                                                            <h3><a name="Manage"></a>CRL設定を管理する</h3>
-                                                            <ol>
-                                                                <li value="1"><span class="uicontrol">c</span>を押して証明書チェーン管理メニューに進みます。</li>
-                                                                <li value="2"><span class="uicontrol">e</span>を押して証明書失効リストの設定の編集を開始します。 </li>
-                                                                <li value="3">CRLダウンロードの間隔を時間で入力します。デフォルトは6であり、最大24時間、最小は1時間です。 </li>
-                                                                <li value="4">CRLキャッシュの間隔を入力します。デフォルトは24で、最大は72です。</li>
-                                                                <li value="5"><span class="uicontrol">x</span>を押してメインメニューに戻ります。</li>
-                                                            </ol>
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        <h2>関連項目</h2>
-                                                        <p><a href="command-line-console-reference.htm" class="MCXref xref" xrefformat="{para}"> コマンドライン管理者コンソールのリファレンス</a>
-                                                        </p>
+                                                        <h1><span class="mc-variable okta-feature-names.Access Gateway_UI variable">Access Gateway 管理者 UI コンソール</span>を初期化する</h1>
+                                                        <p>Once an <span class="mc-variable okta-feature-names.Access_Gateway variable">Access Gateway</span> instance is up and running, you initialize it by assigning it a cookie domain. This domain represents the general domain that the <span class="mc-variable okta-feature-names.Access_Gateway variable">Access Gateway</span> instance is protecting.</p>
+                                                        <ol>
+                                                            <li value="1">
+               デフォルトの認証情報を使用してブラウザーで<a href="https://admin/">https://admin/</a>を開き、サインインします。See <a href="learn-about-default-credentials.htm" class="MCXref xref">Default Access Gateway credentials</a>.</li>
+                                                            <li value="2"><span class="mc-variable okta-feature-names.Access_Gateway variable">Access Gateway</span> prompts you to change the default password. 「<a href="admin-first-login-admin-console.htm" class="MCXref xref">Access Gateway 管理者 UI コンソール</a>に初めてサインインする」をご参照ください。</li>
+                                                            <li value="3">Configure the DNS entries for the <span class="mc-variable okta-feature-names.Access_Gateway variable">Access Gateway</span> instance:
+			
+			<table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/standard-shaded-rows.css');border-left-style: solid;border-left-width: 1px;border-left-color: #c0c0c0;border-right-style: solid;border-right-width: 1px;border-right-color: #c0c0c0;border-top-style: solid;border-top-width: 1px;border-top-color: #c0c0c0;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #c0c0c0;margin-left: 0;margin-right: auto;" class="TableStyle-srb_header_alt_shade" cellspacing="0"><col class="TableStyle-srb_header_alt_shade-Column-Column1" /><col class="TableStyle-srb_header_alt_shade-Column-Column1" style="width: 457px;" /><col class="TableStyle-srb_header_alt_shade-Column-Column1" /><thead><tr class="TableStyle-srb_header_alt_shade-Head-Header1"><th class="TableStyle-srb_header_alt_shade-HeadF-Column1-Header1"><p>名前</p></th><th class="TableStyle-srb_header_alt_shade-HeadF-Column1-Header1"><p>値</p></th><th class="TableStyle-srb_header_alt_shade-HeadD-Column1-Header1"><p>説明</p></th></tr></thead><tbody><tr class="TableStyle-srb_header_alt_shade-Body-Body1"><td class="TableStyle-srb_header_alt_shade-BodyF-Column1-Body1"><span class="mc-variable okta-feature-names.Access_Gateway variable">Access Gateway</span> domain</td><td class="TableStyle-srb_header_alt_shade-BodyF-Column1-Body1">gw.mysite.mycompany.com</td><td class="TableStyle-srb_header_alt_shade-BodyD-Column1-Body1">The default endpoint used to provide <span class="mc-variable okta-feature-names.Access_Gateway variable">Access Gateway</span> authentication and authorization services.</td></tr><tr class="TableStyle-srb_header_alt_shade-Body-Body2"><td class="TableStyle-srb_header_alt_shade-BodyF-Column1-Body2"><span class="mc-variable okta-feature-names.Access_Gateway variable">Access Gateway</span> admin domain</td><td class="TableStyle-srb_header_alt_shade-BodyF-Column1-Body2">gw-admin.mysite.mycompany.com</td><td class="TableStyle-srb_header_alt_shade-BodyD-Column1-Body2">The endpoint used to provide admin UI services. Use this domain to access the local admin app.</td></tr><tr class="TableStyle-srb_header_alt_shade-Body-Body1"><td class="TableStyle-srb_header_alt_shade-BodyC-Column1-Body1"><span class="mc-variable okta-feature-names.Access_Gateway variable">Access Gateway</span> default cookie domain</td><td class="TableStyle-srb_header_alt_shade-BodyC-Column1-Body1">mysite.mycompany.com</td><td class="TableStyle-srb_header_alt_shade-BodyA-Column1-Body1">The default cookie domain used for <span class="mc-variable okta-feature-names.Access_Gateway variable">Access Gateway</span>.</td></tr></tbody></table><div class="noteOkta"><p class="noteContent">Use lower case letters for the domain names.</p></div></li>
+                                                            <li value="4"><span class="uicontrol">［Done（完了）］</span>をクリックします。</li>
+                                                            <li value="5"><span class="mc-variable okta-feature-names.Access_Gateway variable">Access Gateway</span>ブラウザーに戻り、新しい管理ドメインを使って再度サインインします。</li>
+                                                            <li value="6">The <span class="uicontrol"><span class="mc-variable okta-feature-names.Access_Gateway variable">Access Gateway</span> Admin Topology</span>
+page appears.</li>
+                                                        </ol>
                                                     </div>
                                                 </div>
                                             </div>
